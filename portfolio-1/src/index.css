@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +9,101 @@
     list-style: none;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 
 :root {
-    --bg-color:
+    --bg-color: #03071e;
+    --bg-color-var: #370617;
+    --prim-color:#d81159;
+    --prim-color-var:#8f2d56;
+    --white:#fff;
+    --light-white: rgba(255,255,255,0.6);
+    --width-container-lg: 75%;
+    --width-container-md: 85%;
+    --width-container-sm: 90;
+    --transition: all 400ms ease
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color);
+    color: var(--white);
+    line-height: 1.7;
+    background-image: none;
+}
+.container{
+    width: var(--width-container-lg);
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5 {
+    font-weight:500;
+}
+h1{
+    font-size: 2.5rem;
+}
+.light{
+    color: var(--light-white);
+}
+a{
+    color: var(--prim-color);
+    transition:var(--transition)
+}
+a:hover{
+    color: var(--white);
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--prim-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    background-color: var(--white);
+    color: var(--bg-color);
+    border-color: transparent;
+}
+.btn-prim{
+    background: var(--prim-color);
+    color: var(--bg-color);
+}
+section{
+    margin-top: 8rem;
+}
+section > h2, section > h5{
+    text-align: center;
+    color: var(--bg-color-var);
+}
+section > h2 {
+    color: var(--prim-color);
+    margin-bottom: 3rem;
+}
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and(max-width:1024) {
+    .container{
+        width: var(--width-container-md);
+    }
+    section{
+        margin-top: 6rem;
+    }
+}
+@media screen and(max-width:600px) {
+    .container{
+        width: var(--width-container-sm);
+    }
+    section > h2{
+        margin-bottom: 2rem;
+    }
 }
