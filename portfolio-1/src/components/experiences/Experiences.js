@@ -3,7 +3,10 @@ import './Experiences.css'
 
 const Experiences = () => {
   return (
-    <div>Experiences</div>
+    <section id="experiences">
+      Experiences
+      
+    </section>
   )
 }
 

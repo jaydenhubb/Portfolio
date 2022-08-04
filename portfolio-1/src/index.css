@@ -76,6 +76,7 @@ a:hover{
 }
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 section > h2, section > h5{
     text-align: center;
@@ -91,7 +92,7 @@ img {
     object-fit: cover;
 }
 
-@media screen and(max-width:1024) {
+@media screen and (max-width: 1024px) {
     .container{
         width: var(--width-container-md);
     }
@@ -99,7 +100,7 @@ img {
         margin-top: 6rem;
     }
 }
-@media screen and(max-width:600px) {
+@media screen and (max-width: 600px) {
     .container{
         width: var(--width-container-sm);
     }
